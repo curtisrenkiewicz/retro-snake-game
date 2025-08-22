@@ -185,7 +185,7 @@
       <div id="score">SCORE: 0</div>
       <div class="btn-group">
         <button id="muteBtn" class="btn-text" aria-label="Mute/Unmute Sound">
-          MUTED
+          MUTE
         </button>
         <button id="resetBtn" class="btn-text">RESET</button>
       </div>
@@ -233,13 +233,13 @@
         food = { x: 5, y: 5 },
         gameOver = false,
         score = 0,
-        soundMuted = true,
+        soundMuted = false,
         audioCtx = null,
         gameRunning = false,
         gameSpeed = 150; // Slower speed for better control
 
       // Set initial button text
-      muteBtn.textContent = "MUTED";
+      muteBtn.textContent = "MUTE";
 
       // Particle system for food burst
       let particles = [];
